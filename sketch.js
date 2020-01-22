@@ -78,7 +78,7 @@ function draw() {
   }
 
   transporte.mostrarTransporte();
-  image(logo, 645,180);
+  image(logo, 645,180, 70, 70);
 
 
   env.setADSR(0,knob1.knobValue,knob3.knobValue,0);
@@ -161,7 +161,7 @@ function avanzarStep(){
 }
 
 function link() {
-  window.open("https://holawave.store/");
+  window.open("https://github.com/mrtnRivera/web_Browser_Drum_Machine");
   }
 
 function mouseClicked() {
