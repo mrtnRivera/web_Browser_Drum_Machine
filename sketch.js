@@ -59,9 +59,10 @@ function setup() {
   var offsetKnob = 50;
 
   knob1 = new MakeKnob(50,35,205, 0.025, 1.25, 0.5, 0, " ", color(10));
-  knob2 = new MakeKnob(50,35 + 50 + offsetKnob, 205, 0.025, 0.7, 0.01, 0, " ", color(106, 188, 113));
-  knob3 = new MakeKnob(50,35 + 100 + (offsetKnob * 2),205, 0.0, 1.0, 0.0, 0, " ", color(255, 73, 68));
-  knob4 = new MakeKnob(50,35 + 150 + (offsetKnob * 3),205, 60, 200, 100, 0, " ", color(255));
+  knob2 = new MakeKnob(50,85 + offsetKnob, 205, 0.025, 0.7, 0.01, 0, " ", color(106, 188, 113));
+  knob3 = new MakeKnob(50,135 + (offsetKnob * 2),205, 0.0, 1.0, 0.0, 0, " ", color(255, 73, 68));
+  knob4 = new MakeKnob(50,185 + (offsetKnob * 3),205, 60, 200, 100, 0, " ", color(255));
+
 
   inicializarVolumen();
   delay = new p5.Delay();
@@ -88,6 +89,21 @@ function draw() {
   knob2.update();
   knob3.update();
   knob4.update();
+
+  textSize(15);
+  textAlign(CENTER);
+  noStroke();
+  fill(knob1.knobColor);
+  text("decay", knob1.pos.x, knob1.pos.y + 45);
+
+  fill(knob2.knobColor);
+  text("echo", knob2.pos.x, knob2.pos.y + 45);
+
+  fill(knob3.knobColor);
+  text("mix", knob3.pos.x, knob3.pos.y + 45);
+
+  fill(knob4.knobColor);
+  text("tempo", knob4.pos.x, knob4.pos.y + 45);
 
   if(mouseX > 645 && mouseX < 645 + 80 && mouseY > 180 && mouseY < 180 + 80){
     cursor(CROSS);
@@ -261,9 +277,7 @@ function MakeKnob(radius, locx, locy, lowNum, hiNum, defaultNum, numPlaces, labe
 	ellipse(0, -this.radius*.4, this.radius/10,this.radius/10);
 	pop();
 	rotate(0);
-	textAlign(CENTER);
 	this.knobValue=map(this.rotateMe, -145, 145, hiNum, lowNum);
-	textSize(18);
 
   }
 
