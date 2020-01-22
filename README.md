@@ -1,7 +1,7 @@
 # A Drum Machine for your web browser
 16 step sequencer **Drum Machine** build with p5.js
 
-![alt text](# "Screen capture")
+![alt text](https://github.com/mrtnRivera/web_Browser_Drum_Machine/blob/gh-pages/assets/drum_machine.png "Screen capture")
 
 Originally created for the first installment of [MexSynthCo](https://mexsynthco.com/), a synth oriented convention in Mexico City.
 
