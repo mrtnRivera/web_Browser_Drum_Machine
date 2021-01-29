@@ -26,15 +26,15 @@ let tiles = [numTiles];
 
 function preload() {
   soundFormats('wav');
-  sample1 = loadSound('assets/Kick.wav');
-  sample2 = loadSound('assets/Snr.wav');
-  sample3 = loadSound('assets/Hat.wav');
-  sample4 = loadSound('assets/Fx.wav');
+  sample1 = loadSound('assets/Kick.mp3');
+  sample2 = loadSound('assets/Snr.mp3');
+  sample3 = loadSound('assets/Hat.mp3');
+  sample4 = loadSound('assets/Fx.mp3');
 
-  sample1b = loadSound('assets/Kick2.wav');
-  sample2b = loadSound('assets/Snr2.wav');
-  sample3b = loadSound('assets/Hat2.wav');
-  sample4b = loadSound('assets/Fx2.wav');
+  sample1b = loadSound('assets/Kick2.mp3');
+  sample2b = loadSound('assets/Snr2.mp3');
+  sample3b = loadSound('assets/Hat2.mp3');
+  sample4b = loadSound('assets/Fx2.mp3');
 
   logo = loadImage('assets/logo.png');
 
